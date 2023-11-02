@@ -119,3 +119,18 @@ class LocalGPT:
         else:
             self.searching = False
             return ""
+
+"""
+Example:
+
+from text_generation_web_api import LocalGPT
+localgpt = LocalGPT()
+
+# Normal text
+result = localgpt.search("What is the meaning of life?")
+print(result)
+
+# For large text
+result = localgpt.search_large_text('Your a helpful assistant who summarizes in detail YouTube video transcripts. Summarize each chunk and then provide a summary of the whole transcript. End your response with <|end_of_turn|>', cleaned_transcript)
+print(result)
+"""
